@@ -1,12 +1,14 @@
+
+
 def Ticket_Pricing(n: int) -> int:
-   if n < 5:
-      return "Free"
-   elif n >= 5 and n<=17:
-      return "$10"
-   elif n>=18 and n<=64:
-      return "$20"
-   else:
-      return"$15"
+    if n < 5:
+        return 0
+    elif 5 <= n <= 17:
+        return 10
+    elif 18 <= n <= 64:
+        return 20
+    else:  # age >= 65
+        return 15
 
 
 if __name__ == '__main__':
